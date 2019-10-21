@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".android.practice.EighthActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:text="购买"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:checked="true"
+            android:text="黑色"
+            android:textAlignment="center"
+            android:textColor="@color/radiobutton_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:checked="true"
+            android:text="白色"
+            android:textAlignment="center"
+            android:textColor="@color/radiobutton_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiobutton_bg"
+            android:button="@null"
+            android:checked="true"
+            android:text="土豪金"
+            android:textAlignment="center"
+            android:textColor="@color/radiobutton_color" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="your name"
+        android:inputType="textPersonName"
+        android:textColor="#8BC34A" />
+</LinearLayout>
