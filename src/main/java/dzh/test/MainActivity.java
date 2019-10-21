@@ -18,6 +18,7 @@ import dzh.test.andr.senior.ThirteenthActivity;
 import dzh.test.andr.senior.TwelfthActivity;
 import dzh.test.android.practice.EighthActivity;
 import dzh.test.android.practice.NinthActivity;
+import dzh.test.first_line_code.TestBroadCastActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -58,7 +59,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mFourth = findViewById(R.id.id_btn_fourth);
         mFourth.setOnClickListener(this);
-
 
     }
 
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.id_btn_fourth:
             {
-                Intent intent = new Intent(getApplicationContext(), ThirteenthActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TestBroadCastActivity.class);
                 startActivity(intent);
             }
 
