@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".andr.senior.FourteenthActivity">
+
+    <EditText
+        android:id="@+id/id_fourteenth_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_marginTop="49dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/id_fourteenth_clock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textSize="22sp"/>
+    <Button
+        android:id="@+id/id_fourteenth_start_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="开始"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:onClick="startCount"/>
+</LinearLayout>

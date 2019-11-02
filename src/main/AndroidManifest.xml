@@ -7,15 +7,30 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_dol"
         android:label="我的测试"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_dol"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".andr.senior.ThirteenthActivity"></activity>
+        <activity android:name=".andr.senior.FifteenthActivity"></activity>
+        <activity android:name=".andr.senior.FourteenthActivity" />
+
+        <receiver
+            android:name=".first_line_code.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="dzh.MY_TEST" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".first_line_code.TestBroadCastActivity" />
+        <activity android:name=".andr.senior.ThirteenthActivity" />
         <activity android:name=".andr.senior.TwelfthActivity" />
         <activity android:name=".andr.senior.EleventhActivity" />
         <activity android:name=".andr.senior.TenthActivity" />
